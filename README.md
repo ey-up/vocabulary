@@ -2,6 +2,13 @@
 
 İngilizce kelime hazinesini arttırmayı sağlayan bir uygulamadır.
 
+
+## Kullanım
+
+npm install
+
+ionic serve --lab
+
 ## Özellikler
 
 -Kullanıcı girişi ve üyelik
