@@ -1,20 +1,28 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Giriş
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-content [fullscreen]="true"  >
+    <ion-item>
+      <ion-label   position="floating">Email</ion-label>
+    <ion-input color="primary" inputmode="text"  [(ngModel)]="kullanici.email"></ion-input>
+    </ion-item>
+   
+    <ion-item>
+      <ion-label position="floating">Şifre </ion-label>
+    <ion-input color="primary" inputmode="text" type="password" [(ngModel)]="kullanici.password"></ion-input>
+    </ion-item>
+    <ion-button size="default" expand="full" shape="round"  fill="outline" color="primary" (click)="GirisYap(kullanici)" >Giriş</ion-button>
+    
+    <ion-button size="default"  expand="full" shape="round" color="dark" fill="outline" (click)="KayitOl(kullanici)" >Kayıt Ol</ion-button>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+
+
+  </ion-content>
+
+
+

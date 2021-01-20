@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>liste</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card  *ngFor="let item of wordList">
+    <ion-label >
+      <ion-label>
+        İngilizce--> {{ item.i}} 
+      </ion-label>
+      <br>
+      <ion-label  >
+        Türkçe--> {{ item.t}} 
+      </ion-label>
+    </ion-label>
+    
+  </ion-card>
+</ion-content>
